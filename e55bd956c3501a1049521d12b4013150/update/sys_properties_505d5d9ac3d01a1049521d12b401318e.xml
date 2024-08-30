@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Read me for git repo</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_146833_redhatpre.readme</name>
+        <read_roles/>
+        <suffix>readme</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-30 17:28:50</sys_created_on>
+        <sys_id>505d5d9ac3d01a1049521d12b401318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_146833_redhatpre.readme</sys_name>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name>sys_properties_505d5d9ac3d01a1049521d12b401318e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-30 17:28:50</sys_updated_on>
+        <type>string</type>
+        <value>Integrate servicenow with app deployed using gitrepo : https://github.com/anilvaranasi/metrobus-repairs-nlp-workshop.git&#13;
+This app is accessible via rest api call&#13;
+&#13;
+my_text = 'car will not start'            #e.g. 'the brakes squeal when the car begins to stop'&#13;
+#my_route = 'your_service (http://...)'   #this is the route that was created in your OpenShift dedicated project&#13;
+my_route = 'https://metrobus-repairs-nlp-workshop-git-servicenowredhatgenai.rhh24cluster-dal10-b3c-32-b7fa127339e34d1cc8d1b3e2be243d89-0000.us-south.containers.appdomain.cloud/'&#13;
+&#13;
+import requests&#13;
+import json&#13;
+from json import dumps&#13;
+&#13;
+content = {"text": my_text}&#13;
+json_data = dumps(content)&#13;
+&#13;
+headers = {"Content-Type" : "application/json"}&#13;
+&#13;
+r = requests.post(my_route + '/prediction', data=json_data, headers=headers)&#13;
+&#13;
+print(r.content)&#13;
+&#13;
+expected output&#13;
+&#13;
+b'{"prediction":"starter"}\n'&#13;
+</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=505d5d9ac3d01a1049521d12b401318e"/>
+</record_update>
