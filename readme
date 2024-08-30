@@ -1,0 +1,23 @@
+Integrate servicenow with app deployed using gitrepo : https://github.com/anilvaranasi/metrobus-repairs-nlp-workshop.git
+This app is accessible via rest api call
+
+my_text = 'car will not start'            #e.g. 'the brakes squeal when the car begins to stop'
+#my_route = 'your_service (http://...)'   #this is the route that was created in your OpenShift dedicated project
+my_route = 'https://metrobus-repairs-nlp-workshop-git-servicenowredhatgenai.rhh24cluster-dal10-b3c-32-b7fa127339e34d1cc8d1b3e2be243d89-0000.us-south.containers.appdomain.cloud/'
+
+import requests
+import json
+from json import dumps
+
+content = {"text": my_text}
+json_data = dumps(content)
+
+headers = {"Content-Type" : "application/json"}
+
+r = requests.post(my_route + '/prediction', data=json_data, headers=headers)
+
+print(r.content)
+
+expected output
+
+b'{"prediction":"starter"}\n'
