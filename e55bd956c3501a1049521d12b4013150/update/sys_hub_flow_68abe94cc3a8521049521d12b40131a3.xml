@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=311000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Predicts outcome based on input</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>rhos_predictor</internal_name>
+        <label_cache>[{"name":"subflow.inputsysid","label":"Input➛inputsysid","type":"string","base_type":"string","usedInstances":{"693ae7f5-70db-4494-9e7f-cd519c641db1":["inputsysid"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1528d3df-9ef2-40ec-a557-31f923628c1f"}},{"name":"subflow.inputtext","label":"Input➛inputtext","type":"string","base_type":"string","usedInstances":{"693ae7f5-70db-4494-9e7f-cd519c641db1":["inputtext"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cdd86c8e-1e5c-4c4c-a3ff-e6720f178f5c"}},{"name":"693ae7f5-70db-4494-9e7f-cd519c641db1.prediction","label":"1 - RHOSConnector➛prediction","type":"string","base_type":"string","usedInstances":{"56ce6f51-2519-4e08-9ac4-9722cc3dc35e":["prediction-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"db501911-89e5-49e2-aa3a-400ff7af8234"}},{"name":"693ae7f5-70db-4494-9e7f-cd519c641db1.responsetext","label":"1 - RHOSConnector➛responsetext","type":"string","base_type":"string","usedInstances":{"56ce6f51-2519-4e08-9ac4-9722cc3dc35e":["response-1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"04dd5785-3d0c-4374-a97d-f5defb6aea71"}}]</label_cache>
+        <master_snapshot>05dc2d00c3e8521049521d12b40131ee</master_snapshot>
+        <master_snapshot_digest/>
+        <name>RHOS Predictor</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:00:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68abe94cc3a8521049521d12b40131a3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RHOS Predictor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name>sys_hub_flow_68abe94cc3a8521049521d12b40131a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:48</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3^id=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=68abe94cc3a8521049521d12b40131a3^sys_idNOT IN74abe94cc3a8521049521d12b40131a4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>68abe94cc3a8521049521d12b40131a3</id>
+        <name>RHOS Predictor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:00:29</sys_created_on>
+        <sys_id>74abe94cc3a8521049521d12b40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:00:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=74abe94cc3a8521049521d12b40131a4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=68abe94cc3a8521049521d12b40131a3^sys_idNOT IN6f3ca98cc3a8521049521d12b40131fb,ff3ca98cc3a8521049521d12b40131ff"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1528d3df-9ef2-40ec-a557-31f923628c1f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inputsysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>inputsysid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</model>
+        <model_id>68abe94cc3a8521049521d12b40131a3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_68abe94cc3a8521049521d12b40131a3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:09</sys_created_on>
+        <sys_id>6f3ca98cc3a8521049521d12b40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6f3ca98cc3a8521049521d12b40131fb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=cdd86c8e-1e5c-4c4c-a3ff-e6720f178f5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inputtext</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>inputtext</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</model>
+        <model_id>68abe94cc3a8521049521d12b40131a3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_68abe94cc3a8521049521d12b40131a3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:09</sys_created_on>
+        <sys_id>ff3ca98cc3a8521049521d12b40131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ff3ca98cc3a8521049521d12b40131ff"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=68abe94cc3a8521049521d12b40131a3^sys_idNOT IN1c4ca9ccc3a8521049521d12b40131d2,3b3ca9ccc3a8521049521d12b40131ce"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=558579ec-5771-4842-a174-49c9b57d4a5f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</model>
+        <model_id>68abe94cc3a8521049521d12b40131a3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:11</sys_created_on>
+        <sys_id>1c4ca9ccc3a8521049521d12b40131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1c4ca9ccc3a8521049521d12b40131d2"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d024a610-b217-4ff5-b997-dc5ee68a7ee2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prediction</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>prediction</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</model>
+        <model_id>68abe94cc3a8521049521d12b40131a3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:10</sys_created_on>
+        <sys_id>3b3ca9ccc3a8521049521d12b40131ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b3ca9ccc3a8521049521d12b40131ce"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=68abe94cc3a8521049521d12b40131a3^sys_idNOT INf04ce9ccc3a8521049521d12b401315c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action_type>
+        <action_type_parent display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:14</sys_created_on>
+        <sys_id>f04ce9ccc3a8521049521d12b401315c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 09:46:56</sys_updated_on>
+        <ui_id>693ae7f5-70db-4494-9e7f-cd519c641db1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f04ce9ccc3a8521049521d12b401315c"/>
+    <sys_element_mapping action="delete_multiple" query="id=f04ce9ccc3a8521049521d12b401315c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>inputsysid</field>
+        <id>f04ce9ccc3a8521049521d12b401315c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:14</sys_created_on>
+        <sys_id>bc4ce9ccc3a8521049521d12b401315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</table>
+        <value>{{subflow.inputsysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>inputtext</field>
+        <id>f04ce9ccc3a8521049521d12b401315c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:14</sys_created_on>
+        <sys_id>f44ce9ccc3a8521049521d12b401315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</table>
+        <value>{{subflow.inputtext}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f04ce9ccc3a8521049521d12b401315c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f04ce9ccc3a8521049521d12b401315c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=68abe94cc3a8521049521d12b40131a3^sys_idNOT IN4d4ce9ccc3a8521049521d12b401315f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f04ce9ccc3a8521049521d12b401315f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>prediction,response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:14</sys_created_on>
+        <sys_id>4d4ce9ccc3a8521049521d12b401315f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:48</sys_updated_on>
+        <ui_id>56ce6f51-2519-4e08-9ac4-9722cc3dc35e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4d4ce9ccc3a8521049521d12b401315f"/>
+    <sys_element_mapping action="delete_multiple" query="id=4d4ce9ccc3a8521049521d12b401315f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>prediction</field>
+        <id>4d4ce9ccc3a8521049521d12b401315f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:40</sys_created_on>
+        <sys_id>ecdc2d00c3e8521049521d12b4013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3</table>
+        <value>{{693ae7f5-70db-4494-9e7f-cd519c641db1.prediction}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>4d4ce9ccc3a8521049521d12b401315f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:40</sys_created_on>
+        <sys_id>a0dc2d00c3e8521049521d12b4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3</table>
+        <value>{{693ae7f5-70db-4494-9e7f-cd519c641db1.responsetext}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4d4ce9ccc3a8521049521d12b401315f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d4ce9ccc3a8521049521d12b401315f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_68abe94cc3a8521049521d12b40131a3^sys_idNOT INb33ca98cc3a8521049521d12b40131ff,f33ca9ccc3a8521049521d12b40131cc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inputsysid</element>
+        <help/>
+        <hint/>
+        <label>inputsysid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_68abe94cc3a8521049521d12b40131a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:09</sys_created_on>
+        <sys_id>b33ca98cc3a8521049521d12b40131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inputtext</element>
+        <help/>
+        <hint/>
+        <label>inputtext</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_68abe94cc3a8521049521d12b40131a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:10</sys_created_on>
+        <sys_id>f33ca9ccc3a8521049521d12b40131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_68abe94cc3a8521049521d12b40131a3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3^sys_idNOT IN5c4ca9ccc3a8521049521d12b40131d4,cc4ca9ccc3a8521049521d12b40131d1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:11</sys_created_on>
+        <sys_id>5c4ca9ccc3a8521049521d12b40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prediction</element>
+        <help/>
+        <hint/>
+        <label>prediction</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:03:10</sys_created_on>
+        <sys_id>cc4ca9ccc3a8521049521d12b40131d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:03:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_68abe94cc3a8521049521d12b40131a3"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Predicts outcome based on input</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>rhos_predictor</internal_name>
+        <label_cache>[{"name":"subflow.inputsysid","label":"Input➛inputsysid","type":"string","base_type":"string","usedInstances":{"693ae7f5-70db-4494-9e7f-cd519c641db1":["inputsysid"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1528d3df-9ef2-40ec-a557-31f923628c1f"}},{"name":"subflow.inputtext","label":"Input➛inputtext","type":"string","base_type":"string","usedInstances":{"693ae7f5-70db-4494-9e7f-cd519c641db1":["inputtext"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cdd86c8e-1e5c-4c4c-a3ff-e6720f178f5c"}},{"name":"693ae7f5-70db-4494-9e7f-cd519c641db1.prediction","label":"1 - RHOSConnector➛prediction","type":"string","base_type":"string","usedInstances":{"56ce6f51-2519-4e08-9ac4-9722cc3dc35e":["prediction-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"db501911-89e5-49e2-aa3a-400ff7af8234"}},{"name":"693ae7f5-70db-4494-9e7f-cd519c641db1.responsetext","label":"1 - RHOSConnector➛responsetext","type":"string","base_type":"string","usedInstances":{"56ce6f51-2519-4e08-9ac4-9722cc3dc35e":["response-1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"04dd5785-3d0c-4374-a97d-f5defb6aea71"}}]</label_cache>
+        <master>true</master>
+        <name>RHOS Predictor</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05dc2d00c3e8521049521d12b40131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:42</sys_updated_on>
+        <type>subflow</type>
+        <version>1</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_variable_value action="delete_multiple" query="document_key=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee^id=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=05dc2d00c3e8521049521d12b40131ee^sys_idNOT INc5dc2d00c3e8521049521d12b40131ef"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>05dc2d00c3e8521049521d12b40131ee</id>
+        <name>RHOS Predictor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:42</sys_created_on>
+        <sys_id>c5dc2d00c3e8521049521d12b40131ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c5dc2d00c3e8521049521d12b40131ef"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=05dc2d00c3e8521049521d12b40131ee^sys_idNOT IN15dc6d00c3e8521049521d12b4013124,4ddc2d00c3e8521049521d12b40131f0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=cdd86c8e-1e5c-4c4c-a3ff-e6720f178f5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inputtext</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>inputtext</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">05dc2d00c3e8521049521d12b40131ee</model>
+        <model_id>05dc2d00c3e8521049521d12b40131ee</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_05dc2d00c3e8521049521d12b40131ee</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:43</sys_created_on>
+        <sys_id>15dc6d00c3e8521049521d12b4013124</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=15dc6d00c3e8521049521d12b4013124"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1528d3df-9ef2-40ec-a557-31f923628c1f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inputsysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>inputsysid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">05dc2d00c3e8521049521d12b40131ee</model>
+        <model_id>05dc2d00c3e8521049521d12b40131ee</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_05dc2d00c3e8521049521d12b40131ee</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:42</sys_created_on>
+        <sys_id>4ddc2d00c3e8521049521d12b40131f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ddc2d00c3e8521049521d12b40131f0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=05dc2d00c3e8521049521d12b40131ee^sys_idNOT IN65dc6d00c3e8521049521d12b401312d,6ddc6d00c3e8521049521d12b4013135"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d024a610-b217-4ff5-b997-dc5ee68a7ee2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prediction</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>prediction</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">05dc2d00c3e8521049521d12b40131ee</model>
+        <model_id>05dc2d00c3e8521049521d12b40131ee</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>65dc6d00c3e8521049521d12b401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=65dc6d00c3e8521049521d12b401312d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=558579ec-5771-4842-a174-49c9b57d4a5f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RHOS Predictor">05dc2d00c3e8521049521d12b40131ee</model>
+        <model_id>05dc2d00c3e8521049521d12b40131ee</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>6ddc6d00c3e8521049521d12b4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ddc6d00c3e8521049521d12b4013135"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=05dc2d00c3e8521049521d12b40131ee^sys_idNOT IN35dc6d00c3e8521049521d12b401317e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action_type>
+        <action_type_parent display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="RHOS Predictor">05dc2d00c3e8521049521d12b40131ee</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:45</sys_created_on>
+        <sys_id>35dc6d00c3e8521049521d12b401317e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:45</sys_updated_on>
+        <ui_id>693ae7f5-70db-4494-9e7f-cd519c641db1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=35dc6d00c3e8521049521d12b401317e"/>
+    <sys_element_mapping action="delete_multiple" query="id=35dc6d00c3e8521049521d12b401317e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>inputsysid</field>
+        <id>35dc6d00c3e8521049521d12b401317e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:45</sys_created_on>
+        <sys_id>f1dc6d00c3e8521049521d12b4013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</table>
+        <value>{{subflow.inputsysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>inputtext</field>
+        <id>35dc6d00c3e8521049521d12b401317e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:45</sys_created_on>
+        <sys_id>31dc6d00c3e8521049521d12b4013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</table>
+        <value>{{subflow.inputtext}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=35dc6d00c3e8521049521d12b401317e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=35dc6d00c3e8521049521d12b401317e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=05dc2d00c3e8521049521d12b40131ee^sys_idNOT IN6ddc6d00c3e8521049521d12b401313f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f04ce9ccc3a8521049521d12b401315f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RHOS Predictor">05dc2d00c3e8521049521d12b40131ee</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>prediction,response</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>6ddc6d00c3e8521049521d12b401313f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <ui_id>56ce6f51-2519-4e08-9ac4-9722cc3dc35e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6ddc6d00c3e8521049521d12b401313f"/>
+    <sys_element_mapping action="delete_multiple" query="id=6ddc6d00c3e8521049521d12b401313f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>prediction</field>
+        <id>6ddc6d00c3e8521049521d12b401313f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>e1dc6d00c3e8521049521d12b4013143</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee</table>
+        <value>{{693ae7f5-70db-4494-9e7f-cd519c641db1.prediction}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>6ddc6d00c3e8521049521d12b401313f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>a5dc6d00c3e8521049521d12b4013143</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee</table>
+        <value>{{693ae7f5-70db-4494-9e7f-cd519c641db1.responsetext}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6ddc6d00c3e8521049521d12b401313f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6ddc6d00c3e8521049521d12b401313f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_05dc2d00c3e8521049521d12b40131ee^sys_idNOT IN29dc6d00c3e8521049521d12b4013128,5ddc6d00c3e8521049521d12b4013120"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inputtext</element>
+        <help/>
+        <hint/>
+        <label>inputtext</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_05dc2d00c3e8521049521d12b40131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>29dc6d00c3e8521049521d12b4013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inputsysid</element>
+        <help/>
+        <hint/>
+        <label>inputsysid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_05dc2d00c3e8521049521d12b40131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:43</sys_created_on>
+        <sys_id>5ddc6d00c3e8521049521d12b4013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee^sys_idNOT IN61dc6d00c3e8521049521d12b401313a,a5dc6d00c3e8521049521d12b4013132"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>61dc6d00c3e8521049521d12b401313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prediction</element>
+        <help/>
+        <hint/>
+        <label>prediction</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:44</sys_created_on>
+        <sys_id>a5dc6d00c3e8521049521d12b4013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_05dc2d00c3e8521049521d12b40131ee"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>68abe94cc3a8521049521d12b40131a3</sys_id>
+        <latest_snapshot>05dc2d00c3e8521049521d12b40131ee</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1-06-10-2024_06-17-2024_2231.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=68abe94cc3a8521049521d12b40131a3"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=68abe94cc3a8521049521d12b40131a3^sys_idNOT INdadcad00c3e8521049521d12b4013112"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"dadcad00c3e8521049521d12b4013112","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="RHOS Predictor">68abe94cc3a8521049521d12b40131a3</plan_id>
+        <snapshot>d43d2e04c360921049521d12b4013185</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:05:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dadcad00c3e8521049521d12b4013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:05:47</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

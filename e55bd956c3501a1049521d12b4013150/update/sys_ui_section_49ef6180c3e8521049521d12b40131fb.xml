@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="49ef6180c3e8521049521d12b40131fb" sys_domain="global" table="x_146833_redhatpre_rhos_prediction" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_issue</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>dd962a48c320921049521d12b4013192</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>99962a48c320921049521d12b4013193</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_category</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>11962a48c320921049521d12b4013194</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>95962a48c320921049521d12b4013194</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>prediction</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>1d962a48c320921049521d12b4013194</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>prediction_state</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>91962a48c320921049521d12b4013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>19962a48c320921049521d12b4013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>response</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:02</sys_created_on>
+            <sys_id>9d962a48c320921049521d12b4013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_146833_redhatpre_rhos_prediction" sys_domain="global" view="Default view">49ef6180c3e8521049521d12b40131fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_146833_redhatpre_rhos_prediction</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 05:19:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49ef6180c3e8521049521d12b40131fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_146833_redhatpre_rhos_prediction</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+            <sys_update_name>sys_ui_section_49ef6180c3e8521049521d12b40131fb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 05:19:05</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
