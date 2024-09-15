@@ -20,6 +20,7 @@
     var ga = new GlideAjax('CustPredictAjaxUtils'); // getServiceInfo is the script include name 
     ga.addParam('sysparm_name', 'getModel');
     ga.addParam('sysparm_sdesc', caseSummary); // set service
+	ga.addParam('sysparm_type', 'text');
 
     /* Call GetUserInfo.managerName() with user set to Fred Luddy and use the callback function ManagerParse() to return the result when ready */
     ga.getXMLAnswer(ManagerParse);
@@ -31,7 +32,7 @@ function ManagerParse(response) {
     var product = '';
 	product= responseObj.model;
 
-    alert("product =" + product);
+    alert("based on ML response product sysid =" + product);
     if(product !='') {
         g_form.setValue('product', product);
     }
@@ -42,7 +43,7 @@ function ManagerParse(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f7c3750cc3e8521049521d12b40131dc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>PredictModelBasedOnShortDesc</sys_name>
         <sys_overrides/>
         <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
@@ -50,7 +51,7 @@ function ManagerParse(response) {
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name>sys_script_client_f7c3750cc3e8521049521d12b40131dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 06:40:52</sys_updated_on>
+        <sys_updated_on>2024-09-15 05:27:18</sys_updated_on>
         <table>sn_customerservice_case</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -10,60 +10,52 @@
         <name>CustPredictAjaxUtils</name>
         <script><![CDATA[var CustPredictAjaxUtils = Class.create();
 CustPredictAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-    getModel: function(serviceId) {
-        //Same function is used to make server side as well as client side call, when making call from server side send serviceId
-        //When making call from client side sent parameter sysparm_service
+    getModel: function(issueText, inputType, source) {
+        //When making call from client side sent parameter sysparm_sdesc
         var model = 'other';
         var group = '';
-        var issueText = '';
         var prediction = 'other';
-        issueText = this.getParameter("sysparm_sdesc");
-
-        /*
-        var grService = new GlideRecord('cmdb_ci_service');
-        grService.get(service);
-        group = grService.support_group.toString();
-        busCriticality = grService.busines_criticality.toString();
-        var impactMatcher = new GlideRecord('u_impact_data_lookup');
-        var enQuery = '^active=true^u_business_criticality=' + busCriticality;
-        impactMatcher.addEncodedQuery(enQuery);
-        impactMatcher.query();
-        if (impactMatcher.next()) {
-            impact = impactMatcher.u_impact.toString();
+        if (global.JSUtil.nil(source)) {
+		issueText = '' ;
+        inputType = 'image';
+            issueText = this.getParameter("sysparm_sdesc");
+            inputType = this.getParameter("sysparm_type");
         }
-            */
+
         // Build the payload. You can return additional data if needed. 
         try {
             var inputs = {};
             inputs['inputsysid'] = ''; // String 
             inputs['inputtext'] = issueText; // String 
-    
+            inputs['inputtype'] = inputType;
+
             // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
             // sn_fd.FlowAPI.getRunner().subflow('x_146833_redhatpre.rhos_predictor').inBackground().withInputs(inputs).run();
-                    
+
             // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
             var result = sn_fd.FlowAPI.getRunner().subflow('x_146833_redhatpre.rhos_predictor').inForeground().withInputs(inputs).run();
             var outputs = result.getOutputs();
-    
+
             // Get Outputs:
             // Note: outputs can only be retrieved when executing synchronously.
             prediction = outputs['prediction']; // String
             //var response = outputs['response']; // String
-            
+
         } catch (ex) {
             var message = ex.getMessage();
             gs.error(message);
         }
         model = prediction;
-		var grPrdModel = new GlideRecord('cmdb_hardware_product_model');
-		var enQuery = 'name=' + model;
-		grPrdModel.addEncodedQuery(enQuery);
-		grPrdModel.query();
-		if(grPrdModel.next()) {
-			model = grPrdModel.sys_id.toString();
-		}
+        var grPrdModel = new GlideRecord('cmdb_hardware_product_model');
+        var enQuery = 'name=' + model;
+        grPrdModel.addEncodedQuery(enQuery);
+        grPrdModel.query();
+        if (grPrdModel.next()) {
+            model = grPrdModel.sys_id.toString();
+        }
         var resultPrediction = {
-            "model": model
+            "model": model,
+            "notes": prediction
         };
         return JSON.stringify(resultPrediction);
     },
@@ -73,13 +65,24 @@ CustPredictAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcess
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 05:35:28</sys_created_on>
         <sys_id>9b83bdc8c3e8521049521d12b40131d4</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>CustPredictAjaxUtils</sys_name>
         <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name>sys_script_include_9b83bdc8c3e8521049521d12b40131d4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:11:57</sys_updated_on>
+        <sys_updated_on>2024-09-15 05:15:41</sys_updated_on>
     </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9b83bdc8c3e8521049521d12b40131d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 06:01:27</sys_created_on>
+        <sys_id>7dbc3192c360121049521d12b40131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 06:01:27</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

@@ -19,7 +19,7 @@
         <label_cache>[{"name":"{{action.accesstoken}}","label":"action➛accesstoken","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.inputsysid}}","label":"action➛inputsysid","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.record}}","label":"action➛record","type":"action","ref":"","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.body}}","label":"action➛body","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.inputtext}}","label":"action➛inputtext","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.modelid}}","label":"action➛modelId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.model_id}}","label":"action➛model_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.project_id}}","label":"action➛project_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[02e34d21-5a12-4125-a8c0-7029141c0fbf].accesstoken}}","label":"step➛getTokenAndProperties➛accesstoken","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[6f84826b-daaa-4b62-a5dc-a22390af0a00].response_body}}","label":"step➛REST Make API Call➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record.staticinputtext}}","label":"step➛Look Up Record step➛WatsonxAIInputMessage Record➛StaticInputText","type":"step","ref":"","reference_display":"StaticInputText","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"staticinputtext","choices":null,"attributes":{}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record}}","label":"step➛Look Up Record step➛Record","type":"step","ref":"","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record.finalinputtext}}","label":"step➛Look Up Record step➛WatsonxAIInputMessage Record➛FinalInputText","type":"step","ref":"","reference_display":"FinalInputText","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"finalinputtext","choices":null,"attributes":{}},{"name":"{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].root.results}}","label":"step➛JSON Parser step➛root➛results","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[02e34d21-5a12-4125-a8c0-7029141c0fbf].project_id}}","label":"step➛getTokenAndProperties➛project_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[02e34d21-5a12-4125-a8c0-7029141c0fbf].model_id}}","label":"step➛getTokenAndProperties➛model_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"16883844-f2e5-4e87-96fb-0ab0a729b295"}},{"name":"{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6f84826b-daaa-4b62-a5dc-a22390af0a00].__step_status__.code}}","label":"step➛REST Make API Call➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].root.prediction}}","label":"step➛JSON Parser step➛root➛prediction","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record.u_issue}}","label":"step➛Look Up Record step➛rhos prediction Record➛issue","type":"step","ref":"","reference_display":"issue","base_type":"string","parent_table_name":"x_146833_redhatpre_rhos_prediction","column_name":"u_issue","choices":null,"attributes":{}},{"name":"{{step[24d34219-8995-49c2-ac3c-88ddd895ff16].finalinputtext}}","label":"step➛build input text➛finalinputtext","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>6b486148c3a8521049521d12b4013132</master_snapshot>
         <master_snapshot_digest/>
-        <name>RHOSConnector</name>
+        <name>RHOSConnectorText</name>
         <natlang/>
         <outputs/>
         <outputs/>
@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1bb7edc4c3a8521049521d12b401310d</sys_id>
-        <sys_mod_count>29</sys_mod_count>
-        <sys_name>RHOSConnector</sys_name>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>RHOSConnectorText</sys_name>
         <sys_overrides/>
         <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
         <sys_policy/>
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1bb7edc4c3a8521049521d12b401310d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:41</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:43:32</sys_created_on>
         <sys_id>68c72108c3a8521049521d12b401315a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 05:04:14</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD10c721086ea852106dd7df3897f8cc33":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD10c721086ea852106dd7df3897f8cc33.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"2196a943-5d76-4ace-ab06-512aeb180b62\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD10c721086ea852106dd7df3897f8cc33\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-09-13 17:29:31</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD10c721086ea852106dd7df3897f8cc33":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD10c721086ea852106dd7df3897f8cc33.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"2196a943-5d76-4ace-ab06-512aeb180b62\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD10c721086ea852106dd7df3897f8cc33\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">5cc72108c3a8521049521d12b4013133</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -124,7 +124,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=1bb7edc4c3a8521049521d12b401310d^sys_idNOT IN1cc72108c3a8521049521d12b401312c,3fb7edc4c3a8521049521d12b4013161,8a7ee5c0c3e8521049521d12b4013127,a3b7edc4c3a8521049521d12b401313f,bfb7edc4c3a8521049521d12b4013175,ccc7edc4c3a8521049521d12b40131a9"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action>
+        <action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action>
         <cid>de785cf1-87aa-4a60-b8ff-44c2efc456eb</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -230,7 +230,7 @@
     </sys_hub_input_scripts>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_1cc72108c3a8521049521d12b401312c"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action>
+        <action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action>
         <cid>3e2d6edd-c838-44f7-8a98-783707d2fa93</cid>
         <error_handling_type>2</error_handling_type>
         <extended_inputs/>
@@ -349,7 +349,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=3fb7edc4c3a8521049521d12b4013161"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_3fb7edc4c3a8521049521d12b4013161"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action>
+        <action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action>
         <cid>24d34219-8995-49c2-ac3c-88ddd895ff16</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -740,7 +740,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action>
+        <action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action>
         <cid>02e34d21-5a12-4125-a8c0-7029141c0fbf</cid>
         <error_handling_type>2</error_handling_type>
         <extended_inputs/>
@@ -1130,7 +1130,7 @@ outputs.project_id = projectId;&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action>
+        <action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action>
         <cid>6f84826b-daaa-4b62-a5dc-a22390af0a00</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1603,7 +1603,7 @@ outputs.project_id = projectId;&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action>
+        <action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action>
         <cid>6a09f9d7-1bda-4188-8bec-94d82d0939d3</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1734,7 +1734,7 @@ outputs.project_id = projectId;&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>222aedc8c3a8521049521d12b40131d8</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1742,7 +1742,7 @@ outputs.project_id = projectId;&#13;
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:33</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:44</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1894,7 +1894,7 @@ outputs.project_id = projectId;&#13;
         <label>inputtext</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_1bb7edc4c3a8521049521d12b401310d</name>
@@ -1978,7 +1978,7 @@ outputs.project_id = projectId;&#13;
         <label>model_id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2062,7 +2062,7 @@ outputs.project_id = projectId;&#13;
         <label>project_id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2146,7 +2146,7 @@ outputs.project_id = projectId;&#13;
         <label>inputsysid</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2233,7 +2233,7 @@ outputs.project_id = projectId;&#13;
         <label>responsetext</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2256,14 +2256,14 @@ outputs.project_id = projectId;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 05:04:14</sys_created_on>
         <sys_id>237c6100c3e8521049521d12b401317c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:34</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2290,7 +2290,7 @@ outputs.project_id = projectId;&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d0c72108c3a8521049521d12b4013133</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2298,7 +2298,7 @@ outputs.project_id = projectId;&#13;
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:33</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:44</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2343,7 +2343,7 @@ outputs.project_id = projectId;&#13;
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2430,7 +2430,7 @@ outputs.project_id = projectId;&#13;
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2453,14 +2453,14 @@ outputs.project_id = projectId;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:43:32</sys_created_on>
         <sys_id>5cc72108c3a8521049521d12b4013151</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:34</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2517,7 +2517,7 @@ outputs.project_id = projectId;&#13;
         <label>prediction</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</model>
+        <model display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</model>
         <model_id>1bb7edc4c3a8521049521d12b401310d</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_1bb7edc4c3a8521049521d12b401310d</name>
@@ -2565,7 +2565,7 @@ outputs.project_id = projectId;&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=1bb7edc4c3a8521049521d12b401310d"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=1bb7edc4c3a8521049521d12b401310d^sys_idNOT INa8c72108c3a8521049521d12b401315c"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action_type_id>
+        <action_type_id display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action_type_id>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:43:32</sys_created_on>
         <sys_id>a8c72108c3a8521049521d12b401315c</sys_id>
@@ -2580,13 +2580,13 @@ outputs.project_id = projectId;&#13;
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
         <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Failed to get response"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Failed to get response"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:43:32</sys_created_on>
         <sys_id>a0c72108c3a8521049521d12b401315d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 05:13:38</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:31</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1bb7edc4c3a8521049521d12b401310d^sys_idNOT INafb7edc4c3a8521049521d12b4013138,de2aedc8c3a8521049521d12b4013177,ebb7edc4c3a8521049521d12b4013134,ebb7edc4c3a8521049521d12b401313c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -2778,19 +2778,19 @@ outputs.project_id = projectId;&#13;
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_1bb7edc4c3a8521049521d12b401310d"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=1bb7edc4c3a8521049521d12b401310d^sys_idNOT INc958a148c3a8521049521d12b40131ab"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</action_id>
+        <action_id display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c958a148c3a8521049521d12b40131ab","name":"plan","plan_signature":null}}</plan>
-        <snapshot>b39aee00c360921049521d12b4013197</snapshot>
+        <snapshot>14e325f2c32c921049521d12b4013135</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:46:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c958a148c3a8521049521d12b40131ab</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:44</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:58</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2809,18 +2809,18 @@ outputs.project_id = projectId;&#13;
         <internal_name>rhosconnector</internal_name>
         <label_cache>[{"name":"{{action.accesstoken}}","label":"action➛accesstoken","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.inputsysid}}","label":"action➛inputsysid","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.record}}","label":"action➛record","type":"action","ref":"","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.body}}","label":"action➛body","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.inputtext}}","label":"action➛inputtext","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.modelid}}","label":"action➛modelId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.model_id}}","label":"action➛model_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.project_id}}","label":"action➛project_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[02e34d21-5a12-4125-a8c0-7029141c0fbf].accesstoken}}","label":"step➛getTokenAndProperties➛accesstoken","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[6f84826b-daaa-4b62-a5dc-a22390af0a00].response_body}}","label":"step➛REST Make API Call➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record.staticinputtext}}","label":"step➛Look Up Record step➛WatsonxAIInputMessage Record➛StaticInputText","type":"step","ref":"","reference_display":"StaticInputText","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"staticinputtext","choices":null,"attributes":{}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record}}","label":"step➛Look Up Record step➛Record","type":"step","ref":"","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record.finalinputtext}}","label":"step➛Look Up Record step➛WatsonxAIInputMessage Record➛FinalInputText","type":"step","ref":"","reference_display":"FinalInputText","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"finalinputtext","choices":null,"attributes":{}},{"name":"{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].root.results}}","label":"step➛JSON Parser step➛root➛results","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[02e34d21-5a12-4125-a8c0-7029141c0fbf].project_id}}","label":"step➛getTokenAndProperties➛project_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[02e34d21-5a12-4125-a8c0-7029141c0fbf].model_id}}","label":"step➛getTokenAndProperties➛model_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"16883844-f2e5-4e87-96fb-0ab0a729b295"}},{"name":"{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6f84826b-daaa-4b62-a5dc-a22390af0a00].__step_status__.code}}","label":"step➛REST Make API Call➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].root.prediction}}","label":"step➛JSON Parser step➛root➛prediction","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3e2d6edd-c838-44f7-8a98-783707d2fa93].record.u_issue}}","label":"step➛Look Up Record step➛rhos prediction Record➛issue","type":"step","ref":"","reference_display":"issue","base_type":"string","parent_table_name":"x_146833_redhatpre_rhos_prediction","column_name":"u_issue","choices":null,"attributes":{}},{"name":"{{step[24d34219-8995-49c2-ac3c-88ddd895ff16].finalinputtext}}","label":"step➛build input text➛finalinputtext","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
-        <name>RHOSConnector</name>
+        <name>RHOSConnectorText</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="RHOSConnector">1bb7edc4c3a8521049521d12b401310d</parent_action>
+        <parent_action display_value="RHOSConnectorText">1bb7edc4c3a8521049521d12b401310d</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:45:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6b486148c3a8521049521d12b4013132</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2828,7 +2828,7 @@ outputs.project_id = projectId;&#13;
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 05:13:40</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:49</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2842,10 +2842,10 @@ outputs.project_id = projectId;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:45:59</sys_created_on>
         <sys_id>50586148c3a8521049521d12b40131ed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 04:45:59</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-09-13 17:29:53</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">94586148c3a8521049521d12b40131e0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2913,7 +2913,7 @@ outputs.project_id = projectId;&#13;
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=6b486148c3a8521049521d12b4013132^sys_idNOT IN00586148c3a8521049521d12b40131af,2b486148c3a8521049521d12b4013145,4eae6dc0c3e8521049521d12b40131d9,7b486148c3a8521049521d12b4013173,b3486148c3a8521049521d12b401317b,cc586148c3a8521049521d12b40131d9"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action>
+        <action display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action>
         <cid>6a09f9d7-1bda-4188-8bec-94d82d0939d3</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -3044,7 +3044,7 @@ outputs.project_id = projectId;&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0c586148c3a8521049521d12b40131b1</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3052,7 +3052,7 @@ outputs.project_id = projectId;&#13;
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:40</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:52</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -3164,7 +3164,7 @@ outputs.project_id = projectId;&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action>
+        <action display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action>
         <cid>02e34d21-5a12-4125-a8c0-7029141c0fbf</cid>
         <error_handling_type>2</error_handling_type>
         <extended_inputs/>
@@ -3554,7 +3554,7 @@ outputs.project_id = projectId;&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action>
+        <action display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action>
         <cid>24d34219-8995-49c2-ac3c-88ddd895ff16</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -3945,7 +3945,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action>
+        <action display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action>
         <cid>3e2d6edd-c838-44f7-8a98-783707d2fa93</cid>
         <error_handling_type>2</error_handling_type>
         <extended_inputs/>
@@ -4064,7 +4064,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
     <sys_hub_input_scripts action="delete_multiple" query="instance=7b486148c3a8521049521d12b4013173"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_7b486148c3a8521049521d12b4013173"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action>
+        <action display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action>
         <cid>6f84826b-daaa-4b62-a5dc-a22390af0a00</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -4537,7 +4537,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action>
+        <action display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action>
         <cid>de785cf1-87aa-4a60-b8ff-44c2efc456eb</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -4669,7 +4669,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>inputtext</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</name>
@@ -4753,7 +4753,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>project_id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</name>
@@ -4837,7 +4837,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>inputsysid</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</name>
@@ -4921,7 +4921,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>model_id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132</name>
@@ -5008,7 +5008,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_6b486148c3a8521049521d12b4013132</name>
@@ -5031,14 +5031,14 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:45:59</sys_created_on>
         <sys_id>54586148c3a8521049521d12b40131e5</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:41</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5095,7 +5095,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_6b486148c3a8521049521d12b4013132</name>
@@ -5182,7 +5182,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>responsetext</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_6b486148c3a8521049521d12b4013132</name>
@@ -5205,14 +5205,14 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 05:04:23</sys_created_on>
         <sys_id>b18ce100c3e8521049521d12b40131ac</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:41</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5269,7 +5269,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <label>prediction</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</model>
+        <model display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</model>
         <model_id>6b486148c3a8521049521d12b4013132</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_6b486148c3a8521049521d12b4013132</name>
@@ -5317,7 +5317,7 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=6b486148c3a8521049521d12b4013132"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=6b486148c3a8521049521d12b4013132^sys_idNOT IN10586148c3a8521049521d12b40131ef"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="RHOSConnector">6b486148c3a8521049521d12b4013132</action_type_id>
+        <action_type_id display_value="RHOSConnectorText">6b486148c3a8521049521d12b4013132</action_type_id>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-05 04:45:59</sys_created_on>
         <sys_id>10586148c3a8521049521d12b40131ef</sys_id>
@@ -5325,20 +5325,20 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-09-05 04:45:59</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=10586148c3a8521049521d12b40131ef^sys_idNOT INb39aee00c360921049521d12b4013196"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=10586148c3a8521049521d12b40131ef^sys_idNOT IN14e325f2c32c921049521d12b4013134"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-09-04 21:45:59">10586148c3a8521049521d12b40131ef</action_status_metadata_id>
         <condition>{{step[6f84826b-daaa-4b62-a5dc-a22390af0a00].__step_status__.code}}=1^NQ{{step[6a09f9d7-1bda-4188-8bec-94d82d0939d3].__step_status__.code}}=1</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
         <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Failed to get response"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Failed to get response"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-09-05 09:35:41</sys_created_on>
-        <sys_id>b39aee00c360921049521d12b4013196</sys_id>
+        <sys_created_on>2024-09-13 17:29:54</sys_created_on>
+        <sys_id>14e325f2c32c921049521d12b4013134</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-05 09:35:41</sys_updated_on>
+        <sys_updated_on>2024-09-13 17:29:54</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6b486148c3a8521049521d12b4013132^sys_idNOT IN63486148c3a8521049521d12b4013143,67486148c3a8521049521d12b401313f,6b486148c3a8521049521d12b401313b,b01ba94cc3a8521049521d12b4013123"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -5531,6 +5531,6 @@ if(global.JSUtil.notNil(inputs.recordinputtext)) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>1bb7edc4c3a8521049521d12b401310d</sys_id>
         <latest_snapshot>6b486148c3a8521049521d12b4013132</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1-06-10-2024_06-17-2024_2231.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch0-07-16-2024_07-27-2024_1019.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
