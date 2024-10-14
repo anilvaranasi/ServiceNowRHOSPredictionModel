@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d6896d88c3a8521049521d12b401318d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_146833_redhatpre_rhos_prediction">
+    <x_146833_redhatpre_rhos_prediction action="INSERT_OR_UPDATE">
+        <import_set_run/>
+        <prediction>starter</prediction>
+        <response>{"prediction":"starter"}
+</response>
+        <sys_class_name>x_146833_redhatpre_rhos_prediction</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 04:51:18</sys_created_on>
+        <sys_id>d6896d88c3a8521049521d12b401318d</sys_id>
+        <sys_import_row>0</sys_import_row>
+        <sys_import_set display_value="ISET0010010">5a896d88c3a8521049521d12b401318b</sys_import_set>
+        <sys_import_state>pending</sys_import_state>
+        <sys_import_state_comment/>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_row_error/>
+        <sys_target_sys_id/>
+        <sys_target_table/>
+        <sys_transform_map/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:20:57</sys_updated_on>
+        <template_import_log/>
+        <u_category>other</u_category>
+        <u_issue>When turning, the car evaluated.</u_issue>
+    </x_146833_redhatpre_rhos_prediction>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 05:22:53</sys_created_on>
+        <sys_id>f4c0b984c3e8521049521d12b40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0</sys_name>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name>sys_metadata_link_f4c0b984c3e8521049521d12b40131d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:22:53</sys_updated_on>
+        <tablename>x_146833_redhatpre_rhos_prediction</tablename>
+    </sys_metadata_link>
+</record_update>

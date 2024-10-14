@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public">
+    <sys_public action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <page>db_video</page>
+        <sys_class_name>sys_public</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-13 18:47:59</sys_created_on>
+        <sys_id>b6b5b97ec36c921049521d12b40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>db_video</sys_name>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name>sys_public_b6b5b97ec36c921049521d12b40131c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-13 18:47:59</sys_updated_on>
+    </sys_public>
+</record_update>

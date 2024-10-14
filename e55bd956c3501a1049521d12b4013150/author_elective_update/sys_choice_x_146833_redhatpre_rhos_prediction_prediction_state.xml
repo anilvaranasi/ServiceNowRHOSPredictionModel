@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="prediction_state" table="x_146833_redhatpre_rhos_prediction" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>prediction_state</element>
+            <name>x_146833_redhatpre_rhos_prediction</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:20</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>prediction_state</sys_name>
+            <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+            <sys_update_name>sys_choice_x_146833_redhatpre_rhos_prediction_prediction_state</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:20</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prediction_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>processing</label>
+            <language>en</language>
+            <name>x_146833_redhatpre_rhos_prediction</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:20</sys_updated_on>
+            <value>processing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prediction_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>processed</label>
+            <language>en</language>
+            <name>x_146833_redhatpre_rhos_prediction</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-05 09:18:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-05 09:18:20</sys_updated_on>
+            <value>processed</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

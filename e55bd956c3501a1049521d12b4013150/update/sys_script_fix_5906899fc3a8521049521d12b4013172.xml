@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>RHOStestScriptinclude</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[var sDebug = '';
+var grCase = new GlideRecord('sn_customerservice_case');
+grCase.get('cb8c55c4c368521049521d12b4013129');
+var sinclude = new x_146833_redhatpre.CustPredictAjaxUtils();
+
+var response = sinclude.getModel(grCase.cause.toString(), 'image','br');
+sDebug += 'response = ' + response + "\n";
+var responseObj = JSON.parse(response);
+sDebug += 'responseObj = ' + responseObj + "\n";
+//var product = '';
+//product= responseObj.model;
+var notes = responseObj.notes;
+sDebug += 'notes = ' + notes + "\n";
+gs.info(sDebug);
+/*	
+inputType = 'image';
+issueText = 'I am a tech I uploaded an image of brake pads in this image can you tell if they are having good grip on them';
+*/
+/*
+try {
+    var inputs = {};
+    inputs['inputsysid'] = ''; // String 
+    inputs['inputtext'] = issueText; // String 
+    inputs['inputtype'] = inputType;
+
+    // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+    // sn_fd.FlowAPI.getRunner().subflow('x_146833_redhatpre.rhos_predictor').inBackground().withInputs(inputs).run();
+
+    // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+    var result = sn_fd.FlowAPI.getRunner().subflow('x_146833_redhatpre.rhos_predictor').inForeground().withInputs(inputs).run();
+    var outputs = result.getOutputs();
+
+    // Get Outputs:
+    // Note: outputs can only be retrieved when executing synchronously.
+    prediction = outputs['prediction']; // String
+    //var response = outputs['response']; // String
+    gs.info('prediction:' + prediction);
+} catch (ex) {
+    var message = ex.getMessage();
+    gs.error(message);
+}
+*/]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-15 04:36:24</sys_created_on>
+        <sys_id>5906899fc3a8521049521d12b4013172</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>RHOStestScriptinclude</sys_name>
+        <sys_package display_value="RedHatPredictionModel" source="x_146833_redhatpre">e55bd956c3501a1049521d12b4013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RedHatPredictionModel">e55bd956c3501a1049521d12b4013150</sys_scope>
+        <sys_update_name>sys_script_fix_5906899fc3a8521049521d12b4013172</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-15 04:44:23</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5906899fc3a8521049521d12b4013172</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-15 04:37:28</sys_created_on>
+        <sys_id>3846c1d7c3a8521049521d12b40131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-15 04:37:28</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
